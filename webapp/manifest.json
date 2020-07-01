@@ -1,0 +1,112 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "exampleApp.exampleApp",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "exampleApp.exampleApp.view.Menu",
+			"type": "XML",
+			"async": true,
+			"id": "Menu"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "exampleApp.exampleApp.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "exampleApp.exampleApp.view",
+				"controlAggregation": "pages",
+				"controlId": "mainContents"
+			},
+			"routes": [{
+				"name": "Home",
+				"pattern": "",
+				"target": "Home"
+			},{
+				"name": "Example1",
+				"pattern": "Example1",
+				"target": "Example1"
+			},{
+				"name": "Example22",
+				"pattern": "Example22",
+				"target": "Example22"
+			}],
+			"targets": {
+				"Home": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewId": "home",
+					"viewName": "Home"
+				},
+				"Example1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewId": "example1",
+					"viewName": "Example1"
+				},
+				"Example22": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewId": "example22",
+					"viewName": "Example22"
+				}
+			}
+		}
+	}
+}

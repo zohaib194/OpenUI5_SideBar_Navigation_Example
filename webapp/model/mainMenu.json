@@ -1,0 +1,25 @@
+{
+	"selectedKey": "Home",
+	"navigation": [
+		{
+			"title": "Home",
+			"icon": "sap-icon://bbyd-dashboard",
+			"key": "Home",
+			"items": []
+		},
+		{
+			"title": "Example 1",
+			"icon": "sap-icon://employee",
+			"key": "Example1"
+		},
+		{
+		"title": "Example 2",
+		"icon": "sap-icon://chart-table-view",
+		"key": "metadata",
+		"expanded": true,
+		"items": [  {
+			"title": "Example 2.2",
+			"key": "Example22"
+		}]
+	}]
+}

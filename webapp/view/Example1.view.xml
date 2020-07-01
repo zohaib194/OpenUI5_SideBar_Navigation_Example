@@ -1,0 +1,14 @@
+<mvc:View controllerName="exampleApp.exampleApp.controller.Example1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page showHeader="false">
+		<Panel width="auto" backgroundDesign="Translucent" class="Example1HomePanel">
+			<FlexBox alignItems="Center"
+        			justifyContent="Center">
+				<HBox>
+					<VBox class="Example1TextBox">
+						<Text id="title" class="sapUiMediumMarginBottom" text="Example1"/>
+					</VBox>
+				</HBox>
+			</FlexBox>
+		</Panel>
+	</Page>
+</mvc:View>
