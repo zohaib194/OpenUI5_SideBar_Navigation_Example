@@ -19,6 +19,6 @@
     "@openui5/sap.ui.table": "^1.60",
     "@openui5/sap.uxap": "^1.60",
     "@openui5/themelib_sap_belize": "^1.60",
-    "express": "4.17.1"
+    "express": "4.17.3"
   }
 }
